@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+}
+
+.header {
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  padding: 1%;
+}
+
+.container {
+  overflow-y: auto;
+}
+
+.container section {
+  padding: 1% 1%;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.articles article {
+  width: 31%;
+}
+
+.articles article img {
+  width: 100%;
+}
