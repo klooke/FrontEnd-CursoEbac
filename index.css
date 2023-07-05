@@ -11,13 +11,7 @@ body {
 }
 
 a {
-  color: #373737;
-  font-weight: bold;
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration-line: underline;
 }
 
 .header {
@@ -37,8 +31,14 @@ a:hover {
 }
 
 .header nav a {
+  color: #373737;
   font-size: medium;
+  font-weight: bold;
   padding: 1%;
+}
+
+.header nav a:hover {
+  text-decoration-line: underline;
 }
 
 .container {
@@ -46,7 +46,6 @@ a:hover {
 }
 
 .container section {
-  color: #373737;
   padding: 1%;
 }
 
@@ -64,7 +63,7 @@ a:hover {
 .articles article {
   width: 31%;
   border-radius: 1%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #ffffff78;
 }
 
 .articles article * {
@@ -78,29 +77,40 @@ a:hover {
   padding: 0;
 }
 
-.articles article footer {
+.article_footer {
   display: flex;
   font-size: small;
   justify-content: space-between;
-  padding: 0;
 }
 
-.articles article time {
-  color: #373737;
+.article_footer time {
+  color: #2c2c2c;
+  padding-left: 0;
 }
 
-#sport {
+.article_footer a {
+  display: inline-block;
+  border: 2px transparent solid;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.article_footer a:hover {
+  opacity: 0.9;
+}
+
+#sport, #sport .article_footer a {
   background-color: #1382AD;
 }
 
-#economy {
+#economy, #economy .article_footer a  {
+  background-color: #36AD4A;
+}
+
+#entertainment, #entertainment .article_footer a  {
   background-color: #FA6334;
 }
 
-#entertainment {
-  background-color: #41FA60;
-}
-
-#technology {
-  background-color: #36AD4A;
+#technology, #technology .article_footer a  {
+  background-color: #c0c0c0;
 }
