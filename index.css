@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+#validate {
+    border: 1px solid rgba(0, 128, 0, 50);
+    border-radius: 4px;
+    background-color: green;
+    color: white;
+}
+
+#validate:hover {
+    cursor: pointer;
+    opacity: 75%;
+}
+
+#msg {
+    margin-top: 8px;
+    padding: 4px;
+    display: block;
+    text-align: center;
+    font-size: smaller;
+}
+
+.container {
+    display: block;
+    max-width: 1280px;
+    margin: 8px auto;
+    max-width: 50%;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container form label {
+    font-weight: bold;
+}
+
+.container form input {
+    margin: 8px 0;
+    padding: 4px;
+}
+
+.container form input:focus {
+    outline: none;
+}
+
+.correct-msg {
+    background-color: green;
+    color: white;
+}
+
+.incorrect-msg {
+    background-color: red;
+    color: white;
+}
+
+.incorrect-input {
+    border-color: red;
+    opacity: 75%;
+}
