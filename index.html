@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Integrando HTML com JavaScript</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main class="container">
+      <form>
+        <label for="field_a">Número A:</label>
+        <input type="number" name="field_a" id="field_a" required value="0"/>
+        <label for="field_b">Número B:</label>
+        <input type="number" name="field_b" id="field_b" required value="0"/>
+        <input id="validate" type="submit" value="Validar" />
+      </form>
+      <p id="msg"></p>
+    </main>
+  </body>  
+  <script src="index.js"></script>
+</html>
